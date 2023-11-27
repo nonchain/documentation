@@ -36,6 +36,7 @@
     "IERC",
     "Linea",
     "Mainnets",
+    "Merkle",
     "MOONRIVER",
     "MOVR",
     "Numberish",
@@ -54,6 +55,7 @@
     "typechain",
     "WAVAX",
     "WBNB",
+    "whatsnext",
     "WMATIC",
     "XDAI"
   ]
