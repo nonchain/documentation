@@ -4,7 +4,7 @@ date: Last Modified
 title: "CCIP Supported Networks"
 ---
 
-Click on the following links to find the latest configuration for Chainlink CCIP:
+Supported tokens and configurations vary from one network to another, and might differ from one version to another. Check the latest supported tokens and the latest configuration for the specific version of CCIP that you use:
 
 - Mainnets:
   - [v1.2.0](/ccip/supported-networks/v1_2_0/mainnet)
@@ -12,3 +12,9 @@ Click on the following links to find the latest configuration for Chainlink CCIP
 - Testnets:
   - [v1.2.0](/ccip/supported-networks/v1_2_0/testnet)
   - [v1.0.0 (Deprecated)](/ccip/supported-networks/v1_0_0/testnet)
+
+## Onboarding New Tokens
+
+To help ensure the highest level of cross-chain security and facilitate sustainable economics for Chainlink CCIP, expanding support for additional tokens is an ongoing process. In terms of security, the configuration of [token pool rate limits](/ccip/architecture/#token-pool-rate-limit) is established on a per-token basis for each individual lane. These rate limits are set together with token issuers where applicable. Rate limits are also set based on various factors such as the unique risk characteristics of the token and the intended use cases. The onboarding process for adding new tokens also helps ensure dApps and users interact with the correct version of tokens, which reduces risks within the cross-chain ecosystem.
+
+In terms of economics, CCIP must know the value of the tokens being transferred cross-chain in order to [charge the correct amount of fees](/ccip/billing). If you trasfer tokens and pay in LINK, the value of the transferred tokens is used to calculate the percentage-based fee. If you transfer tokens and pay in native blockchain gas tokens, the value of the transferred tokens is used to calculate the surcharge. Exchange rate data for CCIP-supported tokens is required to enable per-lane [aggregate rate limits](/ccip/architecture/#aggregate-rate-limit), which limit the overall USD-denominated value that can be transferred on a specific lane across all supported tokens.
